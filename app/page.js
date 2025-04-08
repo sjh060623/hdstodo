@@ -44,7 +44,7 @@ export default function Home() {
   return (
     <div className="bg-gray-100 min-h-screen flex items-center justify-center p-4">
       <div className="bg-white shadow-lg rounded-2xl w-full max-w-md p-6">
-        <h1 className="text-2xl font-bold text-center text-gray-800 mb-4">📝 Todo App</h1>
+        <h1 className="text-2xl font-bold text-center text-gray-800 mb-4">현담이의 todo리스트</h1>
         <div className="flex gap-2 mb-4">
           <input
             type="text"
@@ -69,9 +69,9 @@ export default function Home() {
               <span className="text-gray-800">{task}</span>
               <button
                 onClick={() => removeTask(index)}
-                className="bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-red-600 transition"
+                className="bg-green-500 text-white px-3 py-1 rounded-lg hover:bg-green-600 transition"
               >
-                삭제
+                완료
               </button>
             </li>
           ))}
